@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    The home page
+    <div>
+        {% if messages %}
+            {% for mess in messages %}
+                <div class="{{mess.tags}}">{{mess}}</div>
+            {% endfor %}        
+        {% endif %}
+    </div>
+    
+</body>
+</html>
